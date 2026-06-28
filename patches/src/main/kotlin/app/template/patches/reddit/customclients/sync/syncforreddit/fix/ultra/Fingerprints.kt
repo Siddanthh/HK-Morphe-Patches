@@ -44,3 +44,10 @@ internal val CommentHolderTFingerprint = Fingerprint(
     parameters = listOf(),
     accessFlags = listOf(AccessFlags.PRIVATE)
 )
+
+internal val RestoreCommentRequestParseFingerprint = Fingerprint(
+    name = "parseNetworkResponse",
+    parameters = listOf("Lcom/android/volley/NetworkResponse;"),
+    returnType = "Lcom/android/volley/Response;",
+    strings = listOf("body_raw", "body_processed")
+)
